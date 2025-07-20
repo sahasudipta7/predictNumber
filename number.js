@@ -6,7 +6,6 @@ const guessRemaining = document.querySelector("#guessRem");
 let guessR=10;
 let playGame = true;
 
-while(playGame){
     form.addEventListener("submit", (e)=>{
     e.preventDefault();
     const userNumber = parseInt(document.querySelector("#number").value);
@@ -31,5 +30,4 @@ while(playGame){
     }
 } )
 
-}
 
