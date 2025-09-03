@@ -5,7 +5,6 @@ const prevGuess=document.querySelector("#prevGuess");
 const guessRemaining = document.querySelector("#guessRem");
 let guessR=10;
 let playGame = true;
-
     form.addEventListener("submit", (e)=>{
     e.preventDefault();
     const userNumber = parseInt(document.querySelector("#number").value);
@@ -26,6 +25,7 @@ let playGame = true;
     prevGuess.appendChild(pg);
     if(guessR==0){
         playGame=false;
+        document.querySelector("#submit").disabled=true;
         alert("guesses are over");        
     }
 } )
